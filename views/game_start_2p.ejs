@@ -7,9 +7,12 @@
     <title>Document</title>
   </head>
   <body>
-    <h1 id="namesEntered">
+    <h1 id="namesEntered" >
       <%=`Player 1: ${player1Name} -> HP: ${hpPlayer1}` %> <br />
       <%= `Player 2: ${player2Name} -> HP: ${hpPlayer2}` %>
     </h1>
+    <form method="post" action="/two_players">
+      <input type="submit" value="Attack">
+    </form>
   </body>
 </html>
